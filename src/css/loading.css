@@ -1,0 +1,57 @@
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000000;
+  transition: top 0.5s;
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #273e66;
+  position: relative;
+  left: 0%;
+}
+.loader img {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -100%;
+  animation: load 2s 0.5s both alternate 1,
+    makeRotation 0.3s 2.2s both alternate 1;
+}
+@keyframes load {
+  50% {
+    top: 50%;
+    width: 200px;
+  }
+  100% {
+    top: 50%;
+    width: 450px;
+  }
+}
+@keyframes makeRotation {
+  30% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+}
+@media (max-width: 767px) {
+  .loader img {
+    width: 300px;
+  }
+  @keyframes load {
+    50% {
+      top: 50%;
+      width: 150px;
+    }
+    100% {
+      top: 50%;
+      width: 250px;
+    }
+  }
+}
