@@ -14,7 +14,7 @@ We aim to build an innovation and conscious computer science students that are a
 - Develop team members and external members.
 - spreading science and promoting technical content on the Internet.
 
-# People helped in this Website
+# Website Technical Team Members
 
 - UI/UX:
   - [Menna Elgyar](https://www.linkedin.com/in/menna-elgyar/)
